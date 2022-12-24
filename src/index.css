@@ -13,7 +13,7 @@ body {
 
 .App{
   width: 40%;
-  height: 75%;
+  height: 80%;
   bottom: 0;
 }
 
@@ -33,14 +33,15 @@ body {
 
 .MainPanel{
     width: 90%;
-    height: 90%;
+    height: 75%;
+    top:20%;
     border-radius: 20px;
     box-shadow: 0 0 10px 5px var(--input-panel-color), 0 0 2px 1px lightgray;
 }
 
 .InputText{ 
   width: 90%; 
-  height: 70%;
+  height: 55%;
   top: 10%;
   right: 0;
   font-size: 20px;
@@ -90,3 +91,31 @@ body {
   font-size: 25px;
   font-weight: bold;
 }
+
+.Header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  top:0;
+  font-size: 20px;
+	transform: translate(0%,0%);
+	background-image: linear-gradient(var(--counter-panel-color), var(--counter-panel-color));
+  background-size: 100% 10px;
+	background-repeat: no-repeat;
+	transition: background-size .7s, background-position .5s, color .5s ease-in-out;
+  font-weight: bold;
+}
+
+.Header:hover{
+	background-size: 100% 100%;
+  	background-position: 0% 100%;
+	  color: var(--input-panel-color);
+  	transition: background-position .7s, background-size .5s, color .5s ease-in-out;
+    font-weight: bold;
+}
+
+h1{
+  font-weight: bold;
+}
+

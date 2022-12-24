@@ -2,6 +2,10 @@ import { useState } from "react";
 
 
 function App() {
+	document.title = "Word Counter";
+
+	
+
 	const [charCount, setCharCount] = useState("")
 	const [wordsCount, setWordsCount] = useState("")
 	
@@ -16,17 +20,33 @@ function App() {
 
 	return (
 		<div className="App">
+			<div className="Header">
+    			<h1>WORD COUNTER</h1>
+  			</div>
 			<div className="MainPanel">
-				<textarea class="InputText" type="Text" placeholder="Start typing here..." onChange={handleChange}/>
+				<textarea 
+					class="InputText" 
+					type="Text" 
+					placeholder="Start typing here..." 
+					onChange={handleChange}
+				/>
 			</div>
 			<div className="CounterPanel">
 				<div className="CounterLeftChild">
-					<div className="CounterText"> {wordsCount || "0"} </div>
-					<div className="CategoryText"> Words </div>
+					<div className="CounterText"> 
+						{wordsCount || "0"} 
+					</div>
+					<div className="CategoryText"> 
+						Words 
+					</div>
 				</div>
 				<div className="CounterRightChild">
-					<div className="CounterText"> {charCount || "0"} </div>
-					<div className="CategoryText"> Characters </div>
+					<div className="CounterText"> 
+						{charCount || "0"} 
+					</div>
+					<div className="CategoryText"> 
+						Characters 
+					</div>
 				</div>
 			</div>
 		</div>
