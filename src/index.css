@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Sora:wght@100;300&display=swap');
+:root {
+  --bg-color: #78A6C8;
+  --input-panel-color: #E9EEF2;
+  --counter-panel-color: #326789;
+  --font-color: #E65C4F;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.App{
+  width: 40%;
+  height: 75%;
+  bottom: 0;
+}
+
+.App, .MainPanel, .InputText{
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  border: 0;
+  
+}
+
+.MainPanel, .InputText{
+  background-color: var(--input-panel-color);
+}
+
+.MainPanel{
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 5px var(--input-panel-color), 0 0 2px 1px lightgray;
+}
+
+.InputText{ 
+  width: 90%; 
+  height: 70%;
+  top: 10%;
+  right: 0;
+  font-size: 20px;
+  outline: 0;
+  -moz-resize: none;
+  -webkit-resize: none;
+  -ms-resize: none;
+  resize: none;
+}
+
+.CounterPanel{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 25%;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--counter-panel-color);
+  border-radius: 20px;
+  box-shadow: 0 0 10px 5px var(--counter-panel-color);
+
+}
+
+.CounterLeftChild{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.CounterRightChild{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.CounterText{
+  color: var(--input-panel-color);
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.CategoryText{
+  color: var(--input-panel-color);
+  font-size: 25px;
+  font-weight: bold;
+}
